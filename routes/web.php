@@ -22,3 +22,6 @@ Route::get('/panitia/verifikasi', function () {
 
 // Rute untuk memproses upload KTP
 Route::post('/panitia/upload-ktp', [PanitiaController::class, 'uploadKtp']);
+
+// Rute untuk melihat Dashboard Panitia
+Route::get('/panitia/dashboard', [PanitiaController::class, 'index']);
